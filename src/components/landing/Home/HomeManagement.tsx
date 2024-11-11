@@ -51,7 +51,7 @@ const HomeManagement = ({ data }: { data: HomeSingleDetailsSection }) => {
         </div>
         <div className="mb-10">
           <div className="reader_info flex justify-start items-start flex-col gap-3">
-            <h1 className="text-white font-semibold text-[24px] sm:text-[35px]"> {data?.main_section?.title} </h1>
+          <h1 className="text-white font-semibold text-[24px] sm:text-[35px]"> {data?.main_section?.title} </h1>
             {data?.main_section?.details ? (<p className="text-white font-medium text-[16px] sm:text-[18px] leading-[2]" dangerouslySetInnerHTML={{ __html: data.main_section.details }}></p>) : (
             <p className="text-white font-medium text-[16px] sm:text-[18px] leading-[2]">No details available.</p>)}
           </div>
